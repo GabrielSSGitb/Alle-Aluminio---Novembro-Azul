@@ -198,3 +198,98 @@ footer p {
         font-size: 1.1em;
     }
 }
+
+
+
+.steps-container {
+    margin-top: 20px;
+}
+
+.step-card {
+    display: flex;
+    gap: 20px;
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-left: 5px solid #2a5298;
+}
+
+.step-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.step-number {
+    background: linear-gradient(135deg, #2a5298, #1e3c72);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    flex-shrink: 0;
+    box-shadow: 0 3px 10px rgba(42, 82, 152, 0.3);
+}
+
+.step-content h3 {
+    color: #1e3c72;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.step-content p {
+    color: #555;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.contact-box {
+    background: #f0f4ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.contact-item {
+    color: #333;
+    padding: 10px 0;
+    border-bottom: 1px solid #d0d9ef;
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-item strong {
+    color: #1e3c72;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .quiz-section, .info-box {
+        padding: 20px;
+    }
+
+    .question {
+        font-size: 1.1em;
+    }
+
+    .step-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .step-number {
+        margin-bottom: 10px;
+    }
+}
